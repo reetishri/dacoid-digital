@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Track Your Goal</title>
+    <!-- You can link your CSS file here if you have any -->
+    
+    <link rel="stylesheet" href="dacoid.css">
+</head>
+<body>
+    <header>
+        <h1>Track Your Goal</h1>
+    </header>
+    
+
+
+    <main>
+        <section id="set-goal">
+            <h2>Set Your Goal</h2>
+            <form>
+                <label for="goal">Goal:</label>
+                <input type="text" id="goal" name="goal" required>
+                
+                <label for="deadline">Deadline:</label>
+                <input type="date" id="deadline" name="deadline" required>
+
+                <button type="submit">Set Goal</button>
+            </form>
+        </section>
+
+        <section id="track-progress">
+            <h2>Track Your Progress</h2>
+            <div id="progress-bar">
+                <!-- You can use CSS to style a progress bar here -->
+            </div>
+            <form>
+                <label for="progress">Progress:</label>
+                <input type="number" id="progress" name="progress" min="0" max="100" required>
+
+                <button type="submit">Update Progress</button>
+            </form>
+        </section>
+
+        <section id="additional-info">
+            <h2>Additional Information</h2>
+            <p>You can add any additional information or tips here to help users achieve their goals.</p>
+        </section>
+    </main>
+
+    <header>
+        <h1>Get Burn</h1>
+    </header>
+
+    <main>
+        <section id="workout-plan">
+            <h2>Your Workout Plan</h2>
+            <p>Here's your personalized workout plan to get that burn:</p>
+            <ul>
+                <li>Warm-up: 5 minutes of stretching</li>
+                <li>Cardio: 20 minutes of running or cycling</li>
+                <li>Strength Training: 3 sets of 10 push-ups, 3 sets of 10 squats</li>
+                <li>Cool-down: 5 minutes of stretching</li>
+            </ul>
+        </section>
+
+        <section id="nutrition-tips">
+            <h2>Nutrition Tips</h2>
+            <p>Proper nutrition is essential for achieving your fitness goals. Here are some tips:</p>
+            <ul>
+                <li>Stay hydrated by drinking plenty of water throughout the day.</li>
+                <li>Eat a balanced diet rich in fruits, vegetables, lean proteins, and whole grains.</li>
+                <li>Avoid processed foods and sugary drinks.</li>
+                <li>Consider incorporating protein-rich snacks into your diet to support muscle recovery.</li>
+            </ul>
+        </section>
+
+        <section id="motivation">
+            <h2>Stay Motivated</h2>
+            <p>Remember, consistency is key to seeing results. Stay motivated with these tips:</p>
+            <ul>
+                <li>Set realistic goals and track your progress.</li>
+                <li>Find a workout buddy or join a fitness community for support.</li>
+                <li>Reward yourself for reaching milestones along the way.</li>
+                <li>Listen to motivational music or podcasts during your workouts.</li>
+            </ul>
+        </section>
+    </main>
+
+    <header>
+        <h1>Create an Account</h1>
+    </header>
+    
+    <main>
+        <form>
+            <div>
+                <label for="first-name">First Name:</label>
+                <input type="text" id="first-name" name="first-name" required>
+            </div>
+            <div>
+                <label for="last-name">Last Name:</label>
+                <input type="text" id="last-name" name="last-name" required>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div>
+                <input type="checkbox" id="agree" name="agree" required>
+                <label for="agree">By proceeding, I agree to all Terms & Conditions and Privacy Policy.</label>
+            </div>
+            <div>
+                <button type="submit">Create Account</button>
+            </div>
+        </form>
+
+        <p>Or sign up with:</p>
+        <button onclick="loginWithGoogle()">Login with Google</button>
+        <button onclick="loginWithFacebook()">Login with Facebook</button>
+
+        <p>Already have an account? <a href="login.html">Login</a></p>
+    </main>
+    <script>
+        function loginWithGoogle() {
+            // Implement login with Google functionality
+            console.log("Login with Google clicked");
+        }
+
+        function loginWithFacebook() {
+            // Implement login with Facebook functionality
+            console.log("Login with Facebook clicked");
+        }
+    </script>
+
+    <header>
+        <h1>Welcome Back</h1>
+    </header>
+
+    <main>
+        <form>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div>
+                <a href="forgot_password.html">Forgot Password?</a>
+            </div>
+            <div>
+                <button type="submit">Sign In</button>
+            </div>
+        </form>
+
+        <p>Or sign in with:</p>
+        <button onclick="loginWithGoogle()">Login with Google</button>
+        <button onclick="loginWithFacebook()">Login with Facebook</button>
+
+        <p>Don't have an account yet? <a href="create_account.html">Create an Account</a></p>
+    </main>
+
+
+    <header>
+        <h1>What Are Your Goals?</h1>
+    </header>
+
+    <main>
+        <form>
+            <div>
+                <input type="checkbox" id="weight-loss" name="goal" value="weight-loss">
+                <label for="weight-loss">Weight Loss</label>
+            </div>
+            <div>
+                <input type="checkbox" id="muscle-gain" name="goal" value="muscle-gain">
+                <label for="muscle-gain">Muscle Gain</label>
+            </div>
+            <div>
+                <input type="checkbox" id="flexibility-mobility" name="goal" value="flexibility-mobility">
+                <label for="flexibility-mobility">Flexibility and Mobility</label>
+            </div>
+            <div>
+                <input type="checkbox" id="general-fitness" name="goal" value="general-fitness">
+                <label for="general-fitness">General Fitness</label>
+            </div>
+            <div>
+                <input type="checkbox" id="event-training" name="goal" value="event-training">
+                <label for="event-training">Event-Specific Training</label>
+            </div>
+            <div>
+                <input type="checkbox" id="mindfulness-mental-health" name="goal" value="mindfulness-mental-health">
+                <label for="mindfulness-mental-health">Mindfulness and Mental Health</label>
+            </div>
+            <div>
+                <button type="submit">Confirm</button>
+            </div>
+        </form>
+    </main>
+
+    <header>
+        <h1>Workout Tracker</h1>
+    </header>
+
+    <main>
+        <section id="calories-tracker">
+            <h2>Calories Tracker</h2>
+            <p>Good job! You have burned fewer calories than yesterday. Time to get moving!</p>
+            <p>Less than 320 cal</p>
+        </section>
+
+        <section id="upcoming-workout">
+            <h2>Upcoming Workout</h2>
+            <ul>
+                <li>Full Body Workout</li>
+                <li>Upper Body Workout</li>
+                <li><a href="see_more.html">See More</a></li>
+            </ul>
+        </section>
+
+        <section id="workout-options">
+            <h2>What Do You Want to Train?</h2>
+            <ul>
+                <li><a href="full_body_workout.html">Full Body Workout</a></li>
+                <li><a href="arms_workout.html">Arms Workout</a></li>
+                <li><a href="chest_workout.html">Chest Workout</a></li>
+            </ul>
+        </section>
+    </main>
+    <header>
+        <h1>Workout Schedule</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Monday</h2>
+            <ul>
+                <li>7:00 AM - Cardio (30 minutes)</li>
+                <li>12:00 PM - Lunch Break</li>
+                <li>5:30 PM - Strength Training (Upper Body)</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Tuesday</h2>
+            <ul>
+                <li>7:00 AM - Yoga (45 minutes)</li>
+                <li>12:00 PM - Lunch Break</li>
+                <li>5:30 PM - Cardio (HIIT - 20 minutes)</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Wednesday</h2>
+            <ul>
+                <li>7:00 AM - Rest Day</li>
+                <li>12:00 PM - Lunch Break</li>
+                <li>5:30 PM - Rest Day</li>
+            </ul>
+        </section>
+
+        <!-- Repeat sections for Thursday, Friday, Saturday, Sunday -->
+
+    </main>
+
+
+    <footer>
+        <p>&copy; 2024 Your Website</p>
+    </footer>
+    <script>
+        function loginWithGoogle() {
+            // Implement login with Google functionality
+            console.log("Login with Google clicked");
+        }
+
+        function loginWithFacebook() {
+            // Implement login with Facebook functionality
+            console.log("Login with Facebook clicked");
+        }
+    </script>
+
+
+
+</body>
+</html>
